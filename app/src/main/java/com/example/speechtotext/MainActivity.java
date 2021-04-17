@@ -18,6 +18,10 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * This Activity helps trigger google assistant to fetch speech to text in 5 different languages
+ * author: Gaurav Pathak
+ */
 public class MainActivity extends AppCompatActivity {
 
 
@@ -32,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         imgMic = findViewById(R.id.imgMic);
         txtSpeech = findViewById(R.id.etSpeech);
 
+        //Intent Services let us access google assistant whose languag ewe can config with RecognizerIntent.EXTRA_LANGUAGE
         imgMic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
